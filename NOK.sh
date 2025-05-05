@@ -2,7 +2,7 @@
 a=$1
 b=$2
 
-gcd() {
+nod() {
   local x=$1
   local y=$2
   while [ $y -ne 0 ]; do
@@ -13,7 +13,7 @@ gcd() {
   echo $x
 }
 
-gcd_val=$(gcd $a $b)
-lcm=$((a * b / gcd_val))
+nod_val=$(nod $a $b)
+lcm=$((a * b / non_val))
 
 echo $lcm
