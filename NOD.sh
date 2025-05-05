@@ -1,6 +1,7 @@
 #!/bin/bash
 
 
+
 NOD() {
     a=$1
     b=$2
@@ -26,3 +27,15 @@ fi
 
 result=$(NOD $1 $2)
 echo "НОД чисел $1 и $2 равен: ${result#-}"  
+
+a=$1
+b=$2
+
+while [ $b -ne 0 ]; do
+  temp=$b
+  b=$((a % b))
+  a=$temp
+done
+
+echo $a
+
